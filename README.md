@@ -1,19 +1,31 @@
-# Advanced Databases — Frequent Pattern Mining
+# Advanced Databases — Data Mining and Text Retrieval
 
-Student Jupyter notebook for CSCI 480 / CIS 680. Adapted from the FAU-CS6 KDD exercises. Uses FP-growth (not Apriori) and the AdventureWorks SQLite database.
+Jupyter notebook teaching materials for CSCI 480 / CIS 680. Includes frequent-pattern mining and text retrieval examples.
 
-## Students: start here
+## Notebooks
 
-1. On GitHub, choose **Code → Codespaces → Create codespace on main**.
-2. Wait for Codespaces setup to finish (first-time setup downloads a ~123 MB database).
-3. Open `Mining-Frequent-Patterns-Student-With-AdventureWorks.ipynb`.
+### Frequent-pattern mining
+
+- [Progressive student notebook](Mining-Frequent-Patterns-Progressive-Student.ipynb)
+- [Clean student notebook](Mining-Frequent-Patterns-Student-Clean.ipynb)
+- [AdventureWorks student notebook](Mining-Frequent-Patterns-Student-With-AdventureWorks.ipynb)
+
+The frequent-pattern exercises use FP-growth and the AdventureWorks SQLite database, adapted from FAU-CS6 KDD exercises.
+
+### Text retrieval
+
+- [Term weighting: TF, IDF, and TF-IDF](Text-Retrieval-Term-Weighting.ipynb) — equations, worked examples from the text-retrieval lecture, and executable Python checks. No additional packages are required.
+
+## Using GitHub Codespaces
+
+1. Choose **Code → Codespaces → Create codespace on main**.
+2. Allow the initial setup to finish. It installs Python notebook dependencies and downloads the AdventureWorks SQLite database (~123 MB).
+3. Open the notebook you want to use.
 4. Choose **Select Kernel → Python Environments → Python 3.12** (`/usr/local/bin/python`).
-5. Run cells in order and complete the TODO exercises.
+5. Run the cells in order.
 
-No PostgreSQL server or local Python installation is required. The database is installed automatically by `.devcontainer/setup.sh` and excluded from Git by `.gitignore`.
+The existing `.devcontainer` and `requirements.txt` support both topics. No PostgreSQL server or local Python installation is required. If the database setup fails, run `bash .devcontainer/setup.sh` in the Codespaces terminal. Do not commit `data/`.
 
-If setup failed or the database is missing, run `bash .devcontainer/setup.sh` in the Codespaces terminal, then rerun the database connection cell. Do not commit the `data/` directory.
+**Instructor note:** Test with a fresh Codespace before assigning. Existing Codespaces do not automatically rerun a changed `postCreateCommand`.
 
-**Instructor note:** Test from a newly created Codespace before assigning. Existing Codespaces do not automatically rerun a changed `postCreateCommand`; use `bash .devcontainer/setup.sh` in an existing Codespace if needed.
-
-Source: https://github.com/FAU-CS6/KDD and https://github.com/FAU-CS6/KDD-Databases
+Frequent-pattern source materials: https://github.com/FAU-CS6/KDD and https://github.com/FAU-CS6/KDD-Databases
