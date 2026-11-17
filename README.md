@@ -15,6 +15,7 @@ The frequent-pattern exercises use FP-growth and the AdventureWorks SQLite datab
 ### Text retrieval
 
 - [Term weighting: TF, IDF, and TF-IDF](Text-Retrieval-Term-Weighting.ipynb) — equations, worked examples from the text-retrieval lecture, and executable Python checks. No additional packages are required.
+- [Similarity and retrieval effectiveness](Text-Retrieval-Similarity-and-Effectiveness.ipynb) — document/query vectors, dot product, cosine similarity, recall, precision, and Python demonstrations.
 
 ## Using GitHub Codespaces
 
